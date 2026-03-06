@@ -56,5 +56,5 @@ _delay_ms(200);
 
 int main(void)
 {
-	atividade2()
+	atividade2();
 }
