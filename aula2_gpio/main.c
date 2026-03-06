@@ -12,9 +12,9 @@
 *piscar um led ligado ao pino PC2, enquanto a chave 
 *ligada ao pino PD3 estiver pressionada
 */
-int main(void)
-{
-	DDRC |= (1<<DDC2);   //configurar o pino PC2 como saída
+
+
+void atividade1(){DDRC |= (1<<DDC2);   //configurar o pino PC2 como saï¿½da
 	DDRD &= (1<<DDD3);//configura pino PD3 como entrada
     while(1)
     {
@@ -28,5 +28,8 @@ int main(void)
 		//chave aberta
 		PORTC &= ~(1<<PORTC2);
 	}
-    }
+    }}
+int main(void)
+{
+	atividade1()
 }
