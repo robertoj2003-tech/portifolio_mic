@@ -7,7 +7,7 @@
 #define F_CPU 16000000
 #include <xc.h>
 #include "util/delay.h"
- uint8_t gMessage[3]; //ultimo byte é checksum
+ uint8_t gMessage[3]= {200,100,50}; //ultimo byte é checksum
 
 void UART_message(uint8_t * pData, int pSize){
 	uint8_t * tMsgPtr = pData;
