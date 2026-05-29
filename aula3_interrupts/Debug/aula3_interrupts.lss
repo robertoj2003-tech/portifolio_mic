@@ -146,7 +146,7 @@ Disassembly of section .text:
 Disassembly of section .text:
 
 000001d6 <__bad_interrupt>:
- 1d6:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+ 1d6:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
 
 Disassembly of section .text.__vector_1:
 
@@ -223,11 +223,11 @@ Disassembly of section .text.__vector_5:
   f2:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <gLedFlag>
   f6:	4b 9b       	sbis	0x09, 3	; 9
   f8:	05 c0       	rjmp	.+10     	; 0x104 <__vector_5+0x42>
-  fa:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <_edata+0x1>
-  fe:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <_edata>
+  fa:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+  fe:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
  102:	04 c0       	rjmp	.+8      	; 0x10c <__vector_5+0x4a>
- 104:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <_edata+0x1>
- 108:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <_edata>
+ 104:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 108:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
  10c:	81 e0       	ldi	r24, 0x01	; 1
  10e:	90 e0       	ldi	r25, 0x00	; 0
  110:	90 93 03 01 	sts	0x0103, r25	; 0x800103 <gLedFlag+0x1>
